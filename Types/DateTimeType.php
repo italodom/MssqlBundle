@@ -72,7 +72,8 @@ class DateTimeType extends BaseDateTimeType
      */
     public function convertToDatabaseValue($value, AbstractPlatform $platform)
     {
-        return ($value !== null)
-            ? $value->format('Y-m-d H:i:s') : null;
+        return $value;
+        //return ($value !== null)
+        //    ? $value->format('Y-m-d H:i:s') : null;
     }
 }
